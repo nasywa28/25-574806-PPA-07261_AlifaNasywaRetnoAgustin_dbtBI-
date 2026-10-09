@@ -1,0 +1,104 @@
+[0m21:14:01.386820 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1716EA270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A16F2DD1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A173FFF9D0>]}
+
+
+============================== 21:14:01.393858 | 7af51915-bab7-45d5-bcf5-0d2907d9019e ==============================
+[0m21:14:01.393858 [info ] [MainThread]: Running with dbt=1.12.5
+[0m21:14:01.395605 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HP\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt init dbt_tugas', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m21:14:01.466142 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\HP\.dbt
+[0m21:14:01.469999 [debug] [MainThread]: Starter project path: C:\Users\HP\tugas_dbt_bi_574806\.venv\Lib\site-packages\dbt\include\starter_project
+[0m21:14:01.527374 [info ] [MainThread]: Setting up your profile.
+[0m21:14:13.057949 [info ] [MainThread]: Profile dbt_tugas written to C:\Users\HP\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m21:14:13.061041 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m21:14:13.061690 [info ] [MainThread]: dbt version: 1.12.5
+[0m21:14:13.062109 [info ] [MainThread]: python version: 3.14.3
+[0m21:14:13.062430 [info ] [MainThread]: python path: C:\Users\HP\tugas_dbt_bi_574806\.venv\Scripts\python.exe
+[0m21:14:13.062740 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m21:14:13.163854 [info ] [MainThread]: Using profiles dir at C:\Users\HP\.dbt
+[0m21:14:13.164751 [info ] [MainThread]: Using profiles.yml file at C:\Users\HP\.dbt\profiles.yml
+[0m21:14:13.165610 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\HP\tugas_dbt_bi_574806\dbt_tugas\dbt_project.yml
+[0m21:14:13.169842 [info ] [MainThread]: adapter type: duckdb
+[0m21:14:13.170633 [info ] [MainThread]: adapter version: 1.10.1
+[0m21:14:13.331902 [info ] [MainThread]: Configuration:
+[0m21:14:13.332597 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:14:13.333171 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m21:14:13.333743 [info ] [MainThread]: Required dependencies:
+[0m21:14:13.334305 [debug] [MainThread]: Executing "git --help"
+[0m21:14:13.400799 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:14:13.401512 [debug] [MainThread]: STDERR: "b''"
+[0m21:14:13.402075 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:14:13.402623 [info ] [MainThread]: Connection:
+[0m21:14:13.403108 [info ] [MainThread]:   database: dev
+[0m21:14:13.403648 [info ] [MainThread]:   schema: main
+[0m21:14:13.404165 [info ] [MainThread]:   path: dev.duckdb
+[0m21:14:13.404611 [info ] [MainThread]:   config_options: None
+[0m21:14:13.405086 [info ] [MainThread]:   extensions: None
+[0m21:14:13.405569 [info ] [MainThread]:   settings: {}
+[0m21:14:13.406025 [info ] [MainThread]:   external_root: .
+[0m21:14:13.406398 [info ] [MainThread]:   use_credential_provider: None
+[0m21:14:13.406847 [info ] [MainThread]:   attach: None
+[0m21:14:13.407311 [info ] [MainThread]:   filesystems: None
+[0m21:14:13.407831 [info ] [MainThread]:   remote: None
+[0m21:14:13.408432 [info ] [MainThread]:   plugins: None
+[0m21:14:13.409008 [info ] [MainThread]:   disable_transactions: False
+[0m21:14:13.409773 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m21:14:13.761940 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m21:14:16.936829 [debug] [MainThread]: Using duckdb connection "debug"
+[0m21:14:16.937480 [debug] [MainThread]: On debug: select 1 as id
+[0m21:14:16.937954 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:14:16.985722 [debug] [MainThread]: SQL status: OK in 0.048 seconds
+[0m21:14:16.986440 [debug] [MainThread]: On debug: Close
+[0m21:14:16.987316 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m21:14:16.987887 [info ] [MainThread]: [32mAll checks passed![0m
+[0m21:14:16.988379 [info ] [MainThread]: Your new dbt project "dbt_tugas" was created!
+Initialized new project in C:\Users\HP\tugas_dbt_bi_574806\dbt_tugas\dbt_tugas
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:14:16.989371 [debug] [MainThread]: Command `dbt init` succeeded at 21:14:16.989270 after 15.78 seconds
+[0m21:14:16.989703 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m21:14:16.990035 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A17409FE10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1747AEB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1746D57B0>]}
+[0m21:14:16.990338 [debug] [MainThread]: Flushing usage events
+[0m21:14:19.084409 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:49:02.521684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEBBE6A270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEB9A5D1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEBE7DF890>]}
+
+
+============================== 21:49:02.526015 | 463cc7de-1774-406f-9b75-d8563204cb7e ==============================
+[0m21:49:02.526015 [info ] [MainThread]: Running with dbt=1.12.5
+[0m21:49:02.526660 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': '.', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt docs generate --profiles-dir .', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m21:49:02.527023 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\HP\tugas_dbt_bi_574806\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m21:49:02.527659 [debug] [MainThread]: Command `dbt docs generate` failed at 21:49:02.527570 after 0.15 seconds
+[0m21:49:02.528081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEBE76D350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEBE868710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BEBE8256A0>]}
+[0m21:49:02.528432 [debug] [MainThread]: Flushing usage events
+[0m21:49:04.137719 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:33:05.199864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002133D466270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002133B095090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002133FDDB9D0>]}
+
+
+============================== 22:33:05.206366 | 5b1a2d9e-911c-411a-a064-bbfd89b22657 ==============================
+[0m22:33:05.206366 [info ] [MainThread]: Running with dbt=1.12.5
+[0m22:33:05.207485 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': '.', 'invocation_command': 'dbt run --select mart_dashboard_sales --profiles-dir .', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m22:33:05.207993 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\HP\tugas_dbt_bi_574806\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:33:05.208726 [debug] [MainThread]: Command `dbt run` failed at 22:33:05.208630 after 0.20 seconds
+[0m22:33:05.209021 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002133FD71220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002133FE68710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002133FE216A0>]}
+[0m22:33:05.209302 [debug] [MainThread]: Flushing usage events
+[0m22:33:06.646906 [debug] [MainThread]: An error was encountered while trying to flush usage events

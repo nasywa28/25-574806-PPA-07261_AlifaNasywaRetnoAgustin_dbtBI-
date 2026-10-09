@@ -1,0 +1,33 @@
+version: 2
+
+sources:
+  - name: raw
+    description: "Schema raw yang berisi data sumber transaksi e-commerce."
+
+    schema: raw
+
+    tables:
+      - name: transaksi
+        description: "Data transaksi dari pipeline Airflow."
+
+        columns:
+          - name: transaction_id
+            description: "Kode transaksi."
+
+          - name: transaction_date
+            description: "Tanggal transaksi."
+
+          - name: product_name
+            description: "Nama produk."
+
+          - name: category
+            description: "Kategori produk."
+
+          - name: quantity
+            description: "Jumlah unit yang dibeli."
+
+          - name: unit_price
+            description: "Harga satuan produk."
+
+          - name: customer_city
+            description: "Kota pelanggan."

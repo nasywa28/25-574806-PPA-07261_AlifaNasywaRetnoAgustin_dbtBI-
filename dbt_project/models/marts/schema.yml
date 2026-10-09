@@ -1,0 +1,96 @@
+version: 2
+
+models:
+  - name: mart_daily_sales
+
+    description: >
+      Ringkasan penjualan harian untuk analisis tren
+      transaksi e-commerce.
+
+    columns:
+      - name: transaction_date
+        description: "Tanggal transaksi."
+
+        tests:
+          - not_null
+          - unique
+
+      - name: total_transactions
+        description: "Jumlah transaksi unik pada suatu tanggal."
+
+        tests:
+          - not_null
+
+      - name: total_quantity
+        description: "Total unit yang terjual pada suatu tanggal."
+
+        tests:
+          - not_null
+
+      - name: total_sales
+        description: "Total nilai penjualan pada suatu tanggal."
+
+        tests:
+          - not_null
+
+      - name: average_transaction_value
+        description: "Rata-rata nilai transaksi pada suatu tanggal."
+
+  - name: mart_product_sales
+
+    description: >
+      Ringkasan performa penjualan berdasarkan produk
+      dan kategori.
+
+    columns:
+      - name: product_name
+        description: "Nama produk."
+
+        tests:
+          - not_null
+
+      - name: category
+        description: "Kategori produk."
+
+        tests:
+          - not_null
+
+      - name: total_sales
+        description: "Total penjualan produk."
+
+        tests:
+          - not_null
+
+  - name: mart_dashboard_sales
+
+    description: >
+      Ringkasan penjualan berdasarkan tanggal, produk,
+      dan kategori untuk kebutuhan dashboard Power BI.
+
+    columns:
+      - name: transaction_date
+        description: "Tanggal terjadinya transaksi."
+        tests:
+          - not_null
+
+      - name: product_name
+        description: "Nama produk."
+        tests:
+          - not_null
+
+      - name: category
+        description: "Kategori produk."
+        tests:
+          - not_null
+
+      - name: total_transactions
+        description: "Jumlah transaksi unik."
+
+      - name: total_quantity
+        description: "Total unit yang terjual."
+
+      - name: total_sales
+        description: "Total nilai penjualan."
+
+      - name: average_transaction_value
+        description: "Rata-rata nilai transaksi."

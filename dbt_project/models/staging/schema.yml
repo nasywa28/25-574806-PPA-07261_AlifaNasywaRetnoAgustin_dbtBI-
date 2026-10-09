@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: stg_transaksi
+
+    description: >
+      Data transaksi yang sudah dibersihkan, dikonversi
+      tipe datanya, dan dihapus duplikasinya.
+
+    columns:
+      - name: transaction_id
+        description: "Kode unik transaksi."
+
+        tests:
+          - not_null
+          - unique
+
+      - name: transaction_date
+        description: "Tanggal transaksi."
+
+        tests:
+          - not_null
+
+      - name: product_name
+        description: "Nama produk."
+
+        tests:
+          - not_null
+
+      - name: quantity
+        description: "Jumlah produk yang dibeli."
+
+        tests:
+          - not_null
+
+      - name: total_amount
+        description: "Nilai transaksi dari quantity dikali unit_price."
+
+        tests:
+          - not_null

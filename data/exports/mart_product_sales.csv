@@ -1,0 +1,7 @@
+product_name,category,total_transactions,total_quantity,total_sales,average_transaction_value
+Laptop,Electronics,39,128,1088000000.0,27897435.897435896
+Smartphone,Electronics,34,107,481500000.0,14161764.705882354
+Office Chair,Furniture,27,89,155750000.0,5768518.518518519
+Keyboard,Accessories,55,167,58450000.0,1062727.2727272727
+Headset,Accessories,40,108,54000000.0,1350000.0
+Mouse,Accessories,54,140,21000000.0,388888.8888888889
